@@ -1,0 +1,11 @@
+{
+	"create-jar": {
+		"output-dir": "dist",
+		"features": {
+			"js-extender": false,
+			"web-context": "/common-js-bundle",
+			"localization": "features/localization/Language"
+		}
+	},
+	"dump-report": true
+}

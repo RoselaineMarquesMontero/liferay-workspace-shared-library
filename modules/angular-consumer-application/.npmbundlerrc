@@ -1,0 +1,35 @@
+{
+	"create-jar": {
+		"output-dir": "dist",
+		"features": {
+			"js-extender": true,
+			"web-context": "/angular-consumer-application",
+			"localization": "features/localization/Language",
+			"configuration": "features/configuration.json"
+		}
+	},
+	"dump-report": true,
+	"exclude":{
+		"*":true
+	},
+	"config":{
+		"imports":{
+			"common-js-bundle":{
+				"@angular/animations": "10.2.2",
+				"@angular/common": "10.2.2",
+				"@angular/compiler": "10.2.2",
+				"@angular/core": "10.2.2",
+				"@angular/forms": "10.2.2",
+				"@angular/platform-browser": "10.2.2",
+				"@angular/platform-browser-dynamic": "10.2.2",
+				"@angular/router": "10.2.2",
+				"rxjs": "6.6.3",
+				"tslib": "2.0.3",
+				"zone.js": "0.10.3"
+			},
+			"":{
+				"common-js-bundle" : "^1.0.0"
+			}
+		}
+	}
+}

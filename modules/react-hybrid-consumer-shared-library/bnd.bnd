@@ -1,0 +1,5 @@
+Bundle-Name: react-hybrid-consumer-shared-library
+Bundle-SymbolicName: react.hybrid.consumer.shared.library
+Bundle-Version: 1.0.0
+Export-Package: react.hybrid.consumer.shared.library.constants
+Web-ContextPath: /react-hybrid-consumer-shared-library

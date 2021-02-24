@@ -1,0 +1,33 @@
+{
+	"name": "common-js-bundle",
+	"version": "1.0.0",
+	"description": "Common Js Bundle",
+	"devDependencies": {
+		"liferay-npm-bundler": "^2.8.0",
+		"liferay-npm-build-support": "^2.8.0",
+		"babel-cli": "6.26.0",
+		"babel-preset-env": "1.7.0"
+	},
+	"dependencies": {
+		"react": "16.8.6",
+		"react-dom": "16.8.6",
+		"@angular/animations": "10.2.2",
+		"@angular/common": "10.2.2",
+		"@angular/compiler": "10.2.2",
+		"@angular/core": "10.2.2",
+		"@angular/forms": "10.2.2",
+		"@angular/platform-browser": "10.2.2",
+		"@angular/platform-browser-dynamic": "10.2.2",
+		"@angular/router": "10.2.2",
+		"rxjs": "6.6.3",
+		"tslib": "2.0.3",
+		"zone.js": "0.10.3"
+	},
+	"scripts": {
+		"build": "babel --source-maps -d build src && npm run copy-assets && liferay-npm-bundler",
+		"copy-assets": "lnbs-copy-assets",
+		"translate": "lnbs-translate",
+		"deploy": "npm run build && lnbs-deploy"
+	},
+	"main": "index.js"
+}
