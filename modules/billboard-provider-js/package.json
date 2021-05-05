@@ -1,0 +1,21 @@
+{
+	"name": "billboard-provider-js",
+	"version": "1.0.0",
+	"description": "Billboard Provider Js",
+	"devDependencies": {
+		"babel-cli": "6.26.0",
+		"babel-preset-env": "1.7.0",
+		"liferay-npm-build-support": "^2.8.0",
+		"liferay-npm-bundler": "^2.8.0",
+		"liferay-npm-bundler-loader-style-loader": "2.24.3"
+	},
+	"dependencies": {
+		"billboard.js": "3.0.3",
+		"d3": "6.7.0"
+	},
+	"scripts": {
+		"build": "babel --source-maps -d build src && npm run copy-assets && liferay-npm-bundler",
+		"copy-assets": "lnbs-copy-assets"
+	},
+	"main": "index.js"
+}

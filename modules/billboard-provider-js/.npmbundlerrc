@@ -1,0 +1,16 @@
+{
+	"create-jar": {
+		"output-dir": "dist",
+		"features": {
+			"js-extender": false,
+			"web-context": "/billboard-provider-js"
+		}		
+	},
+	"dump-report": true,
+	"rules": [
+        {
+            "test": "\\.css$",
+            "use": ["style-loader"]
+        }
+    ]
+}
