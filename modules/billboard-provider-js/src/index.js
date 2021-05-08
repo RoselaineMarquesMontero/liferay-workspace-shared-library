@@ -12,13 +12,13 @@ import "billboard.js/dist/billboard.css";
 // or theme style. Find more themes from 'theme' folder
 import "billboard.js/dist/theme/insight.css"
 
-// generate the chart
-var chart = bb.generate({
-    bindto: "#chart",
+const dinamycValues = (chartAttributes) => {
+  return bb.generate({
+    bindto: chartAttributes.id,
     data: {
       // for ESM import usage, import 'line' module and execute it as
       // type: line(),
-      type: "line",
+      type: chartAttributes.type,
       columns: [
           ["data1", 30, 200, 100, 400, 150, 250]
       ]
@@ -29,3 +29,6 @@ var chart = bb.generate({
       enabled: true
     }
 });
+}
+
+export {dinamycValues};
